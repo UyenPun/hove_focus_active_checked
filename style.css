@@ -134,3 +134,22 @@ body {
 #tab-content > div:target {
   display: block;
 }
+
+/* checked */
+label {
+  border: 1px solid black;
+  padding: 3px 10px;
+}
+
+#tab-contents > div {
+  margin-top: 10px;
+  display: none;
+}
+
+#tab-contents > input {
+  display: none;
+}
+
+#tab-contents > input:checked + div {
+  display: block;
+}
