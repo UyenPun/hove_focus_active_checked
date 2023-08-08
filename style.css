@@ -153,3 +153,17 @@ label {
 #tab-contents > input:checked + div {
   display: block;
 }
+
+/* checkbox */
+
+input {
+  display: none;
+}
+
+label {
+  border: 1px solid black;
+}
+
+input:checked + label {
+  border: 5px solid red;
+}
