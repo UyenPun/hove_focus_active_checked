@@ -167,3 +167,36 @@ label {
 input:checked + label {
   border: 5px solid red;
 }
+
+/* tooltip */
+p {
+  margin-top: 100px;
+}
+.tooltip {
+  position: relative;
+  color: red;
+}
+.tooltip span {
+  display: none;
+  color: white;
+  position: absolute;
+  text-align: center;
+  min-width: 100px;
+  max-width: 200px;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  background-color: black;
+  -webkit-transform: translateX(-50%) translateY(-10px);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.tooltip:hover {
+  cursor: pointer;
+}
+
+.tooltip:hover span {
+  display: block;
+}
